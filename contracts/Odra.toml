@@ -1,0 +1,17 @@
+# Ghost Pool AMM Contracts
+# List all contracts to be built by cargo odra build
+
+[[contracts]]
+fqn = "ghost_pool::pool::GhostPoolPool"
+
+[[contracts]]
+fqn = "ghost_pool::lp_token::LpToken"
+
+[[contracts]]
+fqn = "ghost_pool::test_token::TestToken"
+
+# Livenet configuration for testnet deployment
+[livenet]
+chain_name = "casper-test"
+node_address = "https://node.testnet.casper.network/rpc"
+secret_key_path = "../keys/test_secret_key.pem"
